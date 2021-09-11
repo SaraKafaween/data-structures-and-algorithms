@@ -10,7 +10,7 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 let NumNew =[];
 const addOne = (Num) => {
   Num.forEach((i) => {
-    NumNew[i]= Num[i]++;
+    NumNew[i]= Num[i]+1;
   });
   return NumNew;
 };
@@ -23,10 +23,9 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 let stringNem =[];
-let Exc = '!';
 const addExclamation = (string) => {
   string.forEach((i) => {
-    stringNem[i]= string[i]+Exc ;
+    stringNem[i]= string[i]+"!" ;
   });
   return stringNem ;
   };
@@ -57,7 +56,7 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 let stringss=[];
 const greeting = (word) => {
-  word = word.toUpperCase() + Exc ; 
+  word = word.toUpperCase() + "!" ; 
   return word ;
 };
 
