@@ -8,9 +8,9 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 let NumNew =[];
-const addOne = (Num) => {
-  Num.forEach((i) => {
-    NumNew[i]= Num[i]+1;
+const addOne = (arr) => {
+  arr.forEach((i) => {
+    NumNew[i]= arr[i]+1;
   });
   return NumNew;
 };
@@ -23,9 +23,9 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 let stringNem =[];
-const addExclamation = (string) => {
-  string.forEach((i) => {
-    stringNem[i]= string[i]+"!" ;
+const addExclamation = (arr) => {
+  arr.forEach((i) => {
+    stringNem[i]= arr[i]+"!" ;
   });
   return stringNem ;
   };
@@ -38,9 +38,9 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
 let stringsNew =[];
-const allUpperCase = (strings) => {
-  strings.forEach((i) => {
-   stringsNew[i]=string[i].toUpperCase() ;
+const allUpperCase = (arr) => {
+  arr.forEach((i) => {
+   stringsNew[i]=arr[i].toUpperCase() ;
   });
   return stringNem;
 };
