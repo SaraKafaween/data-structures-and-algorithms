@@ -42,7 +42,7 @@ const allUpperCase = (arr) => {
   arr.forEach((element,i) => {
    stringsNew[i]=arr[i].toUpperCase() ;
   });
-  return stringNem;
+  return stringsNew;
 };
 
 /* ------------------------------------------------------------------------------------------------
