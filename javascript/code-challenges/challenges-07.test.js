@@ -74,7 +74,7 @@ For example, if the input is 'Welcome', the output will be:
 ------------------------------------------------------------------------------------------------ */
 
 const howMuchPencil = (str) => {
-  let result = [];
+  let result = [str];
   for (let i = 1; i <= str.length; i++) {
     result[i] = str.slice(i);
   }
@@ -146,8 +146,8 @@ const listFoods = (recipe) => {
 
   recipe.ingredients.forEach((element) => {
     for (let i = 0; i < 2; i++) {
-      firstone = element.slice(item.indexOf(' ')+1);
-      secondone = firstone.slice(string.indexOf(' ')+1);
+      firstone = element.slice(element.indexOf(' ')+1);
+      secondone = firstone.slice(firstone.indexOf(' ')+1);
     }
     result.push(secondone);
   });
